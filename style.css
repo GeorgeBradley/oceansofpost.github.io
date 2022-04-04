@@ -285,6 +285,11 @@ position: relative;
     width:75px;
     height:75px;
     overflow: hidden;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -401,3 +406,34 @@ font-size:0.8rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     font-weight: bold;
 }
+
+
+.post-icon:hover {
+  
+}
+.post-icon:hover::after {
+
+  
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(128, 29, 80, 0.8);
+    cursor: pointer;
+    position: absolute;
+
+    width:100%;
+
+    height:100%;
+  
+  
+    font-size:30px;
+   
+
+    
+    color:white;
+    content: "\e08d";
+    font-family: 'simple-line-icons';
+    z-index: 1000000;
+}   
